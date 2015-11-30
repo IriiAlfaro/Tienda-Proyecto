@@ -13,9 +13,7 @@ function categories_view_user_default_permissions() {
   // Exported permission: 'edit terms in categories'.
   $permissions['edit terms in categories'] = array(
     'name' => 'edit terms in categories',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
