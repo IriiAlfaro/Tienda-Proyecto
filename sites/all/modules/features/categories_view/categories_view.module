@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Categories View feature.
+ */
+
+include_once 'categories_view.features.inc';

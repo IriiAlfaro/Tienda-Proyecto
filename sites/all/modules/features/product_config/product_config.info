@@ -3,6 +3,7 @@ core = 7.x
 package = Tienda
 dependencies[] = fivestar
 dependencies[] = image
+dependencies[] = juicebox
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy

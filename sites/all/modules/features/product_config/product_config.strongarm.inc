@@ -69,7 +69,7 @@ function product_config_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -121,10 +121,7 @@ function product_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_product';
-  $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
-  );
+  $strongarm->value = array();
   $export['node_options_product'] = $strongarm;
 
   $strongarm = new stdClass();

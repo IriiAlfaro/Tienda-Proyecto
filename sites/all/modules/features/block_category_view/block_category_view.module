@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Block Category View feature.
+ */
+
+include_once 'block_category_view.features.inc';

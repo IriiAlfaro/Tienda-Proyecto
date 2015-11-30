@@ -21,7 +21,7 @@ Installation and Usage
 ----------------------
 
 Please see the module documentation for full installation and usage details:
-http://drupal.org/node/2000300
+		
 
 
 

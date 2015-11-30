@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Related Products View feature.
+ */
+
+include_once 'related_products_view.features.inc';
