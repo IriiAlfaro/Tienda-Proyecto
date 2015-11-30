@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Comment Block View feature.
+ */
+
+include_once 'comment_block_view.features.inc';
