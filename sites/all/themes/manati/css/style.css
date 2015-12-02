@@ -149,6 +149,12 @@ ul.categories-group a {
   .field-name-field-product-video {
     margin-top: 380px; } }
 
+.node-flexslider-example > .user-picture {
+  display: none; }
+
+.node-flexslider-example > h2 {
+  display: none; }
+
 label,
 .webform-container-inline label {
   font-size: 14px;
@@ -340,15 +346,15 @@ header form {
       .view-display-id-page .views-row:last-child {
         margin-right: 0; } }
 
-.field-name-field-product-category {
+.field-name-field-product-category, .category-product {
   margin: 0 20px; }
   @media (min-width: 900px) {
-    .field-name-field-product-category {
+    .field-name-field-product-category, .category-product {
       margin: 0 80px; } }
-  .field-name-field-product-category a {
+  .field-name-field-product-category a, .category-product a {
     font-size: 20px;
     font-size: 2rem; }
-  .field-name-field-product-category div {
+  .field-name-field-product-category div, .category-product div {
     font-size: 20px;
     font-size: 2rem; }
 
