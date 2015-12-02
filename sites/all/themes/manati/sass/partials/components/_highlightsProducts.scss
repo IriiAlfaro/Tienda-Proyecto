@@ -1,0 +1,43 @@
+.field-name-field-image-preview {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.field-name-field-name-product .field-item p {
+    @include font-size(25);
+    border-bottom: 2px solid #B56969;
+    color: #B56969;
+    font-family: "Lobster Two";
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contextual-links-region {
+    @include font-size(27);
+    font-family: "Lobster Two";
+    text-align: center;
+}
+
+.view-productos-destacados , .view-display-id-page, .field-name-incommun-product {
+    @media (min-width: 1090px) {
+        @include outer-container;
+        @include span-columns(10);
+        @include shift(2);
+        .views-row {
+            @include span-columns(4);
+            display: inline-block;
+            float: left;
+            margin: 8px 0;
+        }
+    }
+}
+
+.view-display-id-page {
+    @media (min-width: 1090px){
+        background-color: #fff;
+          .views-row {
+            @include span-columns(5);
+        }
+    }
+}
+

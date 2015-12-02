@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,400italic|Lobster+Two:400,400italic);
 html {
   box-sizing: border-box; }
 
@@ -17,7 +18,13 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
+
+img {
+  width: inherit;
+  max-width: 100%;
+  height: auto; }
 
 p, li {
   font-size: 14px;
@@ -29,7 +36,10 @@ p, ul, ol, dl {
   margin: 0 0 0.5em 0; }
 
 ul, ol {
+  margin: 0;
   padding-left: 2em; }
+  ul li, ol li {
+    list-style: none; }
 
 p {
   overflow: hidden; }
@@ -37,10 +47,8 @@ p {
 a {
   text-decoration: none; }
 
-a:hover {
-  text-decoration: underline; }
-
 h1, h2, h3, h4, h5, h6 {
+  color: #B56969;
   margin-top: 0; }
 
 table {
@@ -51,6 +59,15 @@ table {
 
 th, td {
   padding: 0.5em; }
+
+.site-logo {
+  width: 80%;
+  display: block;
+  margin: 15px auto;
+  text-align: center; }
+
+.header-content {
+  height: 100%; }
 
 /*
  * Rules for base drupal elements
@@ -74,4 +91,389 @@ th, td {
     .tabs a:hover {
       color: #000;
       text-decoration: none; }
+
+#site-name {
+  display: none; }
+
+@media (min-width: 900px) {
+  ul.categories-group {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%; }
+    ul.categories-group::after {
+      clear: both;
+      content: "";
+      display: table; }
+    ul.categories-group:last-child {
+      margin-right: 0; } }
+
+ul.categories-group li {
+  border: 1px solid #E6CF8B;
+  list-style: none;
+  margin: 20px 40px;
+  padding: 18px 0;
+  text-align: center; }
+  ul.categories-group li:hover a {
+    color: #E6CF8B; }
+  @media (min-width: 900px) {
+    ul.categories-group li {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%; }
+      ul.categories-group li:last-child {
+        margin-right: 0; } }
+
+ul.categories-group a {
+  color: #22264B;
+  font-size: 1.9rem;
+  position: relative;
+  z-index: 5; }
+
+@media (min-width: 900px) {
+  .main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .main::after {
+      clear: both;
+      content: "";
+      display: table; } }
+
+@media (min-width: 900px) {
+  .field-name-field-product-video {
+    margin-top: 380px; } }
+
+label,
+.webform-container-inline label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px; }
+
+label.option {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5em; }
+
+select {
+  font-size: 12px;
+  font-size: 1.2rem;
+  width: 100%; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: solid #e1e1e1 1px;
+  background: #fff;
+  margin-bottom: 5px;
+  padding: 5px; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; }
+  @media screen and (min-width: 767px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      max-width: 300px; } }
+
+input[type="checkbox"],
+input[type="radio"] {
+  font-size: 16px;
+  font-size: 1.6rem;
+  vertical-align: baseline; }
+
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+  padding: 8px 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (min-width: 767px) {
+    input[type="submit"] {
+      width: auto;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0; } }
+
+.form-type-radio {
+  margin-bottom: 5px; }
+
+.field-widget-text-textarea .form-type-textarea {
+  margin-bottom: 10px; }
+
+.filter-wrapper {
+  border: 0;
+  background: #fff;
+  border-radius: 5px; }
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid red; }
+
+.webform-component {
+  margin-bottom: 15px; }
+
+@media (min-width: 1200px) {
+  .header-content {
+    margin: 0 auto;
+    position: relative;
+    width: 60%; } }
+
+header form {
+  display: none; }
+
+.block-search {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 20%; }
+
+.block-menu {
+  background-color: #B56969; }
+  .block-menu h2 {
+    color: #E8EDF3;
+    margin: 10px 0;
+    text-align: center; }
+  .block-menu a {
+    color: #E8EDF3;
+    font-size: 1.8rem;
+    margin: 10px; }
+
+.menu {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  height: 0;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .menu .leaf {
+    list-style-image: none;
+    list-style: none; }
+
+.show-menu {
+  height: auto;
+  transition: all 1s; }
+
+.node-flexslider-example h2 {
+  display: none; }
+
+.node-flexslider-example ul .node-readmore {
+  display: none; }
+
+.node-flexslider-example ul .comment-add {
+  display: none; }
+
+.field-name-field-image-preview {
+  margin: 0 auto;
+  width: 70%; }
+
+.field-name-field-name-product .field-item p {
+  font-size: 25px;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #B56969;
+  color: #B56969;
+  font-family: "Lobster Two";
+  margin-bottom: 50px;
+  text-align: center; }
+
+.contextual-links-region {
+  font-size: 27px;
+  font-size: 2.7rem;
+  font-family: "Lobster Two";
+  text-align: center; }
+
+@media (min-width: 1090px) {
+  .view-productos-destacados, .view-display-id-page, .field-name-incommun-product {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 17.0596085997%; }
+    .view-productos-destacados::after, .view-display-id-page::after, .field-name-incommun-product::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .view-productos-destacados:last-child, .view-display-id-page:last-child, .field-name-incommun-product:last-child {
+      margin-right: 0; }
+    .view-productos-destacados .views-row, .view-display-id-page .views-row, .field-name-incommun-product .views-row {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      display: inline-block;
+      float: left;
+      margin: 8px 0; }
+      .view-productos-destacados .views-row:last-child, .view-display-id-page .views-row:last-child, .field-name-incommun-product .views-row:last-child {
+        margin-right: 0; } }
+
+@media (min-width: 1090px) {
+  .view-display-id-page {
+    background-color: #fff; }
+    .view-display-id-page .views-row {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%; }
+      .view-display-id-page .views-row:last-child {
+        margin-right: 0; } }
+
+.field-name-field-product-category {
+  margin: 0 20px; }
+  @media (min-width: 900px) {
+    .field-name-field-product-category {
+      margin: 0 80px; } }
+  .field-name-field-product-category a {
+    font-size: 20px;
+    font-size: 2rem; }
+  .field-name-field-product-category div {
+    font-size: 20px;
+    font-size: 2rem; }
+
+.field-name-field-product-price {
+  margin: 0 20px; }
+  @media (min-width: 900px) {
+    .field-name-field-product-price {
+      margin: 0 80px; } }
+  .field-name-field-product-price p {
+    font-size: 20px;
+    font-size: 2rem; }
+
+.field-name-field-product-rating {
+  margin: 0 20px; }
+  @media (min-width: 900px) {
+    .field-name-field-product-rating {
+      margin: 0 80px; } }
+  .field-name-field-product-rating div {
+    font-size: 20px;
+    font-size: 2rem; }
+
+.fivestar-average-stars .form-type-item {
+  margin-top: 3px; }
+
+.fivestar-summary {
+  display: none; }
+
+.field-name-field-description-product p {
+  font-size: 20px;
+  font-size: 2rem;
+  text-align: center; }
+
+.field-name-field-body-description {
+  margin: 20px; }
+  @media (min-width: 900px) {
+    .field-name-field-body-description {
+      margin: 20px 80px; } }
+
+.view-comment h3 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+.view-comment p {
+  font-size: 20px;
+  font-size: 2rem; }
+
+@media (min-width: 900px) {
+  .comment-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 17.0596085997%; }
+    .comment-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .comment-wrapper:last-child {
+      margin-right: 0; } }
+
+.comment-wrapper h2 {
+  clear: both; }
+
+@media (min-width: 900px) {
+  #block-views-comment-block {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    #block-views-comment-block::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #block-views-comment-block:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 900px) {
+  #block-views-comment-block .comment {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%; }
+    #block-views-comment-block .comment:last-child {
+      margin-right: 0; } }
+
+.comment {
+  border: 2px solid #E6CF8B;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 2%;
+  text-align: left;
+  width: 90%; }
+  @media (min-width: 900px) {
+    .comment {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%; }
+      .comment:last-child {
+        margin-right: 0; } }
+  .comment .user-picture {
+    float: left;
+    width: 100px; }
+  .comment h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.2rem;
+    margin: 20px 0; }
+    .comment h3 a {
+      color: #22264B; }
+  .comment p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem; }
+  .comment #comment-form {
+    width: 100%; }
+  .comment .submitted {
+    width: 100%; }
+
+.field-name-field-description-product > .field-items {
+  font-family: 'Lobster Two', cursive; }
+
 /*# sourceMappingURL=style.css.map */
