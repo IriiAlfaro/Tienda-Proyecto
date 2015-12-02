@@ -39,6 +39,12 @@ function comment_block_view_views_default_views() {
   $handler->display->display_options['relationships']['nid']['table'] = 'comment';
   $handler->display->display_options['relationships']['nid']['field'] = 'nid';
   $handler->display->display_options['relationships']['nid']['required'] = TRUE;
+  /* Relationship: Comment: Comments of the node */
+  $handler->display->display_options['relationships']['cid_1']['id'] = 'cid_1';
+  $handler->display->display_options['relationships']['cid_1']['table'] = 'node';
+  $handler->display->display_options['relationships']['cid_1']['field'] = 'cid';
+  $handler->display->display_options['relationships']['cid_1']['relationship'] = 'nid';
+  $handler->display->display_options['relationships']['cid_1']['required'] = TRUE;
   /* Field: Comment: Title */
   $handler->display->display_options['fields']['subject']['id'] = 'subject';
   $handler->display->display_options['fields']['subject']['table'] = 'comment';

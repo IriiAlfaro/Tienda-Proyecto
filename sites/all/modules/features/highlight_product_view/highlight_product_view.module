@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Highlight Product View feature.
+ */
+
+include_once 'highlight_product_view.features.inc';
