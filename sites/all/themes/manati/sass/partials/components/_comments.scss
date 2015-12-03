@@ -1,0 +1,59 @@
+.comment-wrapper {
+    @media (min-width: 900px) {
+        @include outer-container;
+        @include span-columns(10);
+        @include shift(2);
+    }
+
+    h2 {
+        clear: both;
+    }
+}
+
+#block-views-comment-block {
+    @media (min-width: 900px) {
+        @include outer-container;
+        @include span-columns(12);
+    }
+    .comment {
+        @media (min-width: 900px) {
+            @include span-columns(10);
+            @include shift(1);
+        }
+    }
+}
+
+.comment {
+    border: 2px solid $yellow;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 2%;
+    text-align: left;
+    width: 90%;
+
+    @media (min-width: 900px) {
+        @include span-columns(5);
+    }
+    .user-picture {
+        float: left;
+        width: 100px;
+    }
+    h3 {
+        font-family: $title-font;
+        font-size: 2.2rem;
+        margin: 20px 0;
+        a {
+            color: #22264B;
+        }
+    }
+    p {
+        font-family: $main-font;
+        font-size: 1.5rem;
+    }
+    #comment-form {
+        width: 100%;
+    }
+    .submitted {
+        width: 100%;
+    }
+}

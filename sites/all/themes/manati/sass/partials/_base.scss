@@ -4,74 +4,75 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300italic,400italic|Lobster+Two:400,400italic);
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  margin: 0;
-  height: 100%;
+    margin: 0;
+    height: 100%;
 }
 
 img {
-  width: inherit;
-  max-width: 100%;
-  height: auto;
+    height: auto;
+    max-width: 100%;
+    width: inherit;
 }
 
 p, li {
-  @include font-size(14);
-  color: #555;
-  line-height: 1.5;
+    @include font-size(14);
+    color: #555;
+    line-height: 1.5;
 }
 
 p, ul, ol, dl {
-  margin: 0 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 ul, ol {
-  margin: 0;
-  padding-left: 2em;
+    margin: 0;
+    padding-left: 2em;
 
-  li {
-    list-style: none;
-  }
+    li {
+        list-style: none;
+    }
 }
 
 p {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-   color:  #B56969;
-  margin-top: 0;
+    color:  #B56969;
+    margin-top: 0;
 }
 
 // Tablas
 table {
-  width: 100%;
-  border-collapse: collapse;
-  @include font-size(14);
+    @include font-size(14);
+    border-collapse: collapse;
+    width: 100%;
 }
 
 th, td {
-  padding: 0.5em;
+    padding: 0.5em;
 }
 
 //Logo
-
 .site-logo {
-    width: 80%;
     display: block;
     margin: 15px auto;
     text-align: center;
+    width: 80%;
 }
 
 //Header
-
+header form {
+    display: none;
+}
 .header-content {
     height: 100%;
 }
@@ -81,88 +82,86 @@ th, td {
  */
 
 .element-invisible {
-  @extend %hidden;
+    @extend %hidden;
 }
 
 // Tabs
 .tabs {
-  padding: 0;
-  overflow: hidden;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0;
-  li {
-    list-style-type: none;
-    float: left;
-  }
-  a {
-    color: #333;
-    @include font-size(14);
-    padding-right: 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0;
+    li {
+        list-style-type: none;
+        float: left;
+    }
+    a {
+        @include font-size(14);
+        color: #333;
+        padding-right: 20px;
     &.active {
-      color: #000;
-      font-weight: 600;
+        color: #000;
+        font-weight: 600;
     }
     &:hover {
-      color: #000;
-      text-decoration: none;
+        color: #000;
+        text-decoration: none;
     }
-  }
+    }
 }
 
 #site-name {
-  display: none;
+    display: none;
 }
 
 ul.categories-group {
-  @media (min-width: 900px) {
+    @media (min-width: 900px) {
     @include outer-container;
     @include span-columns(10);
     @include shift(1);
 
-  }
-
-
-  li {
-    border: 1px solid #E6CF8B;
-    list-style: none;
-    margin: 20px 40px;
-    padding: 18px 0;
-    text-align: center;
-
-    &:hover a {
-      color: #E6CF8B;
     }
 
-    @media (min-width: 900px) {
-      @include span-columns(5);
-    }
 
-  }
-  a {
-    color: #22264B;
-    font-size: 1.9rem;
-    position: relative;
-    z-index: 5;
-  }
+    li {
+        border: 1px solid #E6CF8B;
+        list-style: none;
+        margin: 20px 40px;
+        padding: 18px 0;
+        text-align: center;
+
+        &:hover a {
+            color: #E6CF8B;
+        }
+        @media (min-width: 900px) {
+            @include span-columns(5);
+        }
+    }
+    a {
+        color: #22264B;
+        font-size: 1.9rem;
+        position: relative;
+        z-index: 5;
+    }
 }
 
 
 .main {
-  @media (min-width: 900px) {
-    @include outer-container;
-  }
+    @media (min-width: 900px) {
+        @include outer-container;
+    }
 }
 
 .field-name-field-product-video {
-  @media (min-width: 900px) {
-    margin-top: 380px;
-  }
+    @media (min-width: 900px) {
+        margin-top: 380px;
+    }
 }
 
-.node-flexslider-example > .user-picture {
-  display: none;
+.node-flexslider-example > .user-picture .submitted {
+    display: none;
 }
 
 .node-flexslider-example > h2 {
-  display: none;
+    display: none;
 }

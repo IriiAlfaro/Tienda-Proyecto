@@ -1,46 +1,47 @@
-
-
 .field-name-field-product-category, .category-product {
-  margin: 0 20px;
-  @media (min-width: 900px) {
-  margin: 0 80px;
-  }
-  a {
-    @include font-size(20);
-  }
-  div {
-    @include font-size(20);
-  }
+    margin: 0 20px;
+
+    @media (min-width: 900px) {
+        margin: 0 80px;
+    }
+    a {
+        @include font-size(20);
+    }
+    div {
+        @include font-size(20);
+    }
 }
 
 .field-name-field-product-price {
-  margin: 0 20px;
-  @media (min-width: 900px) {
-  margin: 0 80px;
-  }
+    margin: 0 20px;
+
+    @media (min-width: 900px) {
+        margin: 0 80px;
+    }
     p {
-    @include font-size(20);
-  }
+        @include font-size(20);
+    }
 }
 
 .field-name-field-product-rating {
-  margin: 0 20px;
-  @media (min-width: 900px) {
-  margin: 0 80px;
-  }
-  div {
-    @include font-size(20);
-  }
+    margin: 0 20px;
+
+    @media (min-width: 900px) {
+        margin: 0 80px;
+    }
+    div {
+        @include font-size(20);
+    }
 }
 
 .fivestar-average-stars {
-  .form-type-item {
-    margin-top: 3px;
-  }
+    .form-type-item {
+        margin-top: 3px;
+    }
 }
 
 .fivestar-summary {
-  display: none;
+    display: none;
 }
 
 .field-name-field-description-product p {
@@ -50,90 +51,22 @@
 
 
 .field-name-field-body-description {
-  margin: 20px;
-  @media (min-width: 900px) {
-    margin: 20px 80px;
-  }
+    margin: 20px;
+
+    @media (min-width: 900px) {
+        margin: 20px 80px;
+    }
 }
 
 .view-comment {
-  h3 {
-    @include font-size(22);
-  }
-  p {
-    @include font-size(20);
-  }
-}
-
-
-//aca va todo lo de comentarios ( modulo )
-
-.comment-wrapper {
-  @media (min-width: 900px) {
-    @include outer-container;
-    @include span-columns(10);
-    @include shift(2);
-  }
-
-  h2 {
-    clear: both;
-  }
-}
-
-#block-views-comment-block {
-  @media (min-width: 900px) {
-    @include outer-container;
-    @include span-columns(12);
-  }
-  .comment {
-    @media (min-width: 900px) {
-      @include span-columns(10);
-      @include shift(1);
+    h3 {
+        @include font-size(22);
     }
-  }
-}
-
-.comment {
-  border: 2px solid #E6CF8B;
-  margin: 20px auto;
-  overflow: hidden;
-  padding: 2%;
-  text-align: left;
-  width: 90%;
-
-  @media (min-width: 900px) {
-    @include span-columns(5);
-  }
-
-  .user-picture {
-    float: left;
-    width: 100px;
-  }
-
-  h3 {
-    font-family:'Lobster Two', cursive;
-    font-size: 2.2rem;
-    margin: 20px 0;
-
-    a {
-      color: #22264B;
+    p {
+        @include font-size(20);
     }
-  }
-
-  p {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-  }
-
-#comment-form {
-  width: 100%;
-}
-
-  .submitted {
-    width: 100%;
-  }
 }
 
 .field-name-field-description-product > .field-items {
-  font-family: 'Lobster Two', cursive;
+    font-family: $title-font;
 }

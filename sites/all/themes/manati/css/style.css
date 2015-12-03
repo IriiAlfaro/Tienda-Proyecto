@@ -22,9 +22,9 @@ body {
   height: 100%; }
 
 img {
-  width: inherit;
+  height: auto;
   max-width: 100%;
-  height: auto; }
+  width: inherit; }
 
 p, li {
   font-size: 14px;
@@ -52,19 +52,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  border-collapse: collapse;
+  width: 100%; }
 
 th, td {
   padding: 0.5em; }
 
 .site-logo {
-  width: 80%;
   display: block;
   margin: 15px auto;
-  text-align: center; }
+  text-align: center;
+  width: 80%; }
+
+header form {
+  display: none; }
 
 .header-content {
   height: 100%; }
@@ -73,17 +76,17 @@ th, td {
  * Rules for base drupal elements
  */
 .tabs {
-  padding: 0;
-  overflow: hidden;
   border-bottom: 1px solid #ccc;
-  margin: 10px 0; }
+  margin: 10px 0;
+  overflow: hidden;
+  padding: 0; }
   .tabs li {
     list-style-type: none;
     float: left; }
   .tabs a {
-    color: #333;
     font-size: 14px;
     font-size: 1.4rem;
+    color: #333;
     padding-right: 20px; }
     .tabs a.active {
       color: #000;
@@ -149,7 +152,7 @@ ul.categories-group a {
   .field-name-field-product-video {
     margin-top: 380px; } }
 
-.node-flexslider-example > .user-picture {
+.node-flexslider-example > .user-picture .submitted {
   display: none; }
 
 .node-flexslider-example > h2 {
@@ -243,13 +246,10 @@ input[type="submit"] {
     position: relative;
     width: 60%; } }
 
-header form {
-  display: none; }
-
 .block-search {
+  left: 45%;
   position: absolute;
   top: 0;
-  left: 45%;
   width: 20%; }
 
 .block-menu {
@@ -264,14 +264,13 @@ header form {
     margin: 10px; }
 
 .menu {
-  position: relative;
-  width: 100%;
+  height: 0;
   overflow: hidden;
   padding: 0;
-  height: 0;
+  position: relative;
   text-align: center;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
+  transition: all 1s;
+  width: 100%; }
   .menu .leaf {
     list-style-image: none;
     list-style: none; }
@@ -305,7 +304,7 @@ header form {
 .contextual-links-region {
   font-size: 27px;
   font-size: 2.7rem;
-  font-family: "Lobster Two";
+  font-family: "Lobster Two", cursive;
   text-align: center; }
 
 @media (min-width: 1090px) {
@@ -336,15 +335,13 @@ header form {
         margin-right: 0; } }
 
 @media (min-width: 1090px) {
-  .view-display-id-page {
-    background-color: #fff; }
-    .view-display-id-page .views-row {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 40.2913699012%; }
-      .view-display-id-page .views-row:last-child {
-        margin-right: 0; } }
+  .view-display-id-page .views-row {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%; }
+    .view-display-id-page .views-row:last-child {
+      margin-right: 0; } }
 
 .field-name-field-product-category, .category-product {
   margin: 0 20px; }
@@ -400,6 +397,9 @@ header form {
 .view-comment p {
   font-size: 20px;
   font-size: 2rem; }
+
+.field-name-field-description-product > .field-items {
+  font-family: "Lobster Two", cursive; }
 
 @media (min-width: 900px) {
   .comment-wrapper {
@@ -466,20 +466,17 @@ header form {
     float: left;
     width: 100px; }
   .comment h3 {
-    font-family: 'Lobster Two', cursive;
+    font-family: "Lobster Two", cursive;
     font-size: 2.2rem;
     margin: 20px 0; }
     .comment h3 a {
       color: #22264B; }
   .comment p {
-    font-family: 'Muli', sans-serif;
+    font-family: "Muli", sans-serif;
     font-size: 1.5rem; }
   .comment #comment-form {
     width: 100%; }
   .comment .submitted {
     width: 100%; }
-
-.field-name-field-description-product > .field-items {
-  font-family: 'Lobster Two', cursive; }
 
 /*# sourceMappingURL=style.css.map */
